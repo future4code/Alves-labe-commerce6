@@ -7,22 +7,23 @@ const Filtros = styled.section`
   height: 500px;
 `;
 
-export default class Filtro extends Component {
-  render() {
+
+export default function Filtro(props) {
+
+  {
     return (
-      <div>
         <Filtros>
-          <section>
             <h2>Filtro</h2>
+
             <p>Valor mínimo:</p>
-            <input type="number" />
+            <input type="number" placeholder="100" value={props.precoMin} onChange={props.atualizaPrecoMin} />
+
             <p>Valor máximo:</p>
-            <input type="number" />
-            <p>Busca por nome:</p>
-            <input type="text" />
-          </section>
+            <input type="number" placeholder="10000" value={props.precoMax} onChange={props.atualizaPrecoMax} />
+
+            <p>Busca por nome:</p>  
+            <input value={props.busca} placeholder="Pesquisa" onChange={props.atualizarBusca}/>
         </Filtros>
-      </div>
     );
   }
 }

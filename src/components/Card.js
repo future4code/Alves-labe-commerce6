@@ -11,19 +11,18 @@ const Imagem = styled.img`
   width: 100%;
 `;
 
-export default class Card extends React.Component {
-  render() {
+export default function Card(props) {
     return (
       <div>
         <Cards>
           <section>
-            <Imagem src={this.props.imagem} />
-            <p>{this.props.titulo}</p>
-            <p>{this.props.preco}</p>
+            <Imagem src={props.elemento.imagem} />
+            <p>{props.elemento.nome}</p>
+            <p>{props.elemento.preco}</p>
             <button>Adicionar ao Carrinho</button>
           </section>
         </Cards>
       </div>
     );
   }
-}
+
