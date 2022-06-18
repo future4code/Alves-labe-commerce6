@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-const Cards = styled.section`
+
+
+const Cards = styled.div`
+  display: flex;
+  flex-wrap: wrap ;
   border: 1px solid black;
   width: 250px;
   height: 500px;
@@ -19,7 +23,7 @@ export default function Card(props) {
             <Imagem src={props.elemento.imagem} />
             <p>{props.elemento.nome}</p>
             <p>{props.elemento.preco}</p>
-            <button>Adicionar ao Carrinho</button>
+            <button onClick={()=> props.selecionaProduto(produtos.id)}>Adicionar ao Carrinho</button>
           </section>
         </Cards>
       </div>

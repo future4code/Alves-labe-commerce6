@@ -4,6 +4,10 @@ import Filtro from "./Filtro";
 import Carrinho from "./Carrinho";
 import listaProdutos from "../data/produtos.json"
 import Ordem from "./Ordem";
+import styled from "styled-components";
+
+
+
 
 export default class Home extends React.Component {
   state={
@@ -12,6 +16,7 @@ export default class Home extends React.Component {
     precoMin: "",
     precoMax: "",
     ordem: 1,
+    listDeCarrinho:[]
   }
 
   atualizaOrdem = (event) =>{
@@ -29,8 +34,19 @@ export default class Home extends React.Component {
   atualizaPrecoMax = (event) =>{
     this.setState({precoMax: event.target.value})
   }
+  
 
+  
+  selecionaProduto =(id) => {
+   const novaList = this.state.produtos.map((produto)=>{
+    if(id === produto.id){
+      const novoProduto ={... produto, };
+}
 
+      this.setState({listDeCarrinho : novaList})
+    
+   }
+   )}
 
   render() {
     return (
@@ -65,15 +81,17 @@ export default class Home extends React.Component {
               return elemento.nome.toLowerCase().includes(this.state.busca.toLowerCase())
             })
             
+            .sort((produto1, produto2)=>{
+              return this.state.ordem * (produto1.preco - produto2.preco)
+            })
+
             .map(elemento =>{
             return <Card 
               key={elemento.id}
               elemento={elemento}/>
             })
 
-            .sort((produto1, produto2)=>{
-              return this.state.ordem * (produto1.preco - produto2.preco)
-            })
+           
           }
         </div>
     
