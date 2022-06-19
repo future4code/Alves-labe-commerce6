@@ -2,11 +2,26 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const Filtros = styled.section`
-  border: 1px solid black;
-  width: 250px;
-  height: 500px;
-`;
+  text-align: center;
+  width: 17vw;
+  margin-left: 5vw;
+  background-color: #D7D4DC;
+  height: 95vh;
+  border-radius: 5px 0px 0px 5px;
+  opacity: 0.6;
+  align-items: center;
 
+  @media screen and (min-device-width : 320px) and (max-device-width : 480px){
+    display: block;
+    padding-top: 10vh;
+    width: 100%;
+    margin: 0;
+    max-height: 100%;
+  }
+  `;
+
+
+  
 
 export default function Filtro(props) {
 
