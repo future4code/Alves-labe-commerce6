@@ -5,9 +5,9 @@ const Filtros = styled.section`
   text-align: center;
   width: 17vw;
   margin-left: 5vw;
+  margin-bottom: 10vh;
   background-color: #D7D4DC;
   height: 95vh;
-  border-radius: 5px 0px 0px 5px;
   opacity: 0.6;
   align-items: center;
 
@@ -28,7 +28,7 @@ export default function Filtro(props) {
   {
     return (
         <Filtros>
-            <h2>Filtro</h2>
+            <h2>Filtrar por:</h2>
 
             <p>Valor mínimo:</p>
             <input type="number" placeholder="100" value={props.precoMin} onChange={props.atualizaPrecoMin} />

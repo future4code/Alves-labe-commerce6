@@ -5,9 +5,9 @@ const Carrinhos = styled.section`
   text-align: center;
   width: 17vw;
   margin-right: 5vw;
+  margin-bottom: 10vh;
   background-color: #D7D4DC;
   height: 95vh;
-  border-radius: 0px 5px 5px 0px;
   opacity: 0.6;
 
   @media screen and (min-device-width : 320px) and (max-device-width : 480px){
