@@ -4,7 +4,16 @@ import styled from "styled-components";
 
 const CardContainer = styled.div`
   border-radius: 5px 5px 5px 5px;
-  box-shadow: 1.5px 2.5px darkgray
+  box-shadow: 1.5px 2.5px darkgray;
+
+  @media screen and (min-device-width : 320px) and (max-device-width : 480px){
+    display: block;
+    text align: center;
+    margin: 0px 0px 20px 0px;
+    width: 100%;
+    border: none
+  }
+
 `
 
 const Cards = styled.div`
@@ -31,7 +40,13 @@ const Cards = styled.div`
 
 const Imagem = styled.img`
   width: 100%;
-  height: 30vh
+  height: 30vh;
+
+  @media screen and (min-device-width : 320px) and (max-device-width : 480px){
+    display: block;
+    width: 100%;
+    height: 100%
+  }
 `;
 
 const Produto = styled.p`
