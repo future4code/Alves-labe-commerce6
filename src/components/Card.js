@@ -22,8 +22,8 @@ const Cards = styled.div`
 `;
 
 const Imagem = styled.img`
-  width: 285px;
-  height: 300px;
+  width: 100%;
+  height: 30vh
 `;
 
 const Produto = styled.p`
