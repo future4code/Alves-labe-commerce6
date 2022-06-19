@@ -2,37 +2,37 @@
     {
         "id": "1",
         "nome": "produto1",
-        "imagem": "https://picsum.photos/200/300",
-        "preco": 50000 
+        "imagem": "https://i.imgur.com/j4kvI6b.jpg/",
+        "preco": 5000 
     },
     {
         "id": "2",
         "nome": "produto2",
-        "imagem": "https://picsum.photos/200/300",
+        "imagem": "https://i.imgur.com/iiOquxf.jpg/",
         "preco":100
     },
     {
         "id": "3",
         "nome": "produto3",
-        "imagem": "https://picsum.photos/200/300",
+        "imagem": "https://i.imgur.com/30G1kRq.jpg/",
         "preco": 500
     },
     {
         "id": "4",
         "nome": "produto4",
-        "imagem": "https://picsum.photos/200/300",
+        "imagem": "https://i.imgur.com/802pYzw.jpg",
         "preco": 50
     },
     {
         "id": "5",
         "nome": "produto5",
-        "imagem": "https://picsum.photos/200/300",
+        "imagem": "https://i.imgur.com/PctTBlr.jpeg",
         "preco": 180
     },
     {
         "id": "6",
         "nome": "produto6",
-        "imagem": "https://picsum.photos/200/300",
+        "imagem": "https://i.imgur.com/zK5B7oa.jpeg",
         "preco": 80
     }
 
