@@ -5,14 +5,16 @@ import Carrinho from "./Carrinho";
 import listaProdutos from "../data/produtos.json"
 import Ordem from "./Ordem";
 import styled from "styled-components";
+import "../App.css";
 import backgroundimage from "../imgProdutos/purplegalaxy.jpg"
 
 const MainContainer = styled.div`
   display: grid;
   justify-items: stretch;
   align-items: center;
-  height: 100vh;
+  height: 120vh;
   grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 10fr;
   background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.3)),url(${backgroundimage});
   background-position: center;
   background-size: cover;
@@ -21,11 +23,33 @@ const MainContainer = styled.div`
     display: block;
   }
 `
+const PageName = styled.div`
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  font-size: 8vh;
+  font-family: 'Amatic SC', cursive;
+  color: white;
+  align-items: center;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  border-radius: 5px 5px 0px 0px;
+  justify-items: flex-end;
+  justify-content: center;
+  margin-top: 5vh;
+  height: 10vh;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(168,143,215,0.48783263305322133) 100%);
+  opacity: 0.6;
+
+}
+`
 
 const CenterContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   height: 95vh;
+  margin-bottom: 10vh
 `
 
 const ProductsContainer = styled.div`
@@ -37,6 +61,7 @@ const ProductsContainer = styled.div`
   align-items: center;
   background-color: #D7D4DC;
   justify-content: space-evenly;
+  overflow: auto
 
   @media screen and (min-device-width : 320px) and (max-device-width : 480px){
     display: block;
@@ -45,8 +70,6 @@ const ProductsContainer = styled.div`
 
 `
 
-
-
 export default class Home extends React.Component {
   state={
     produtos: listaProdutos,
@@ -54,7 +77,8 @@ export default class Home extends React.Component {
     precoMin: "",
     precoMax: "",
     ordem: 1,
-    listDeCarrinho:[]
+
+    carrinho:[]
   }
 
   atualizaOrdem = (event) =>{
@@ -73,7 +97,6 @@ export default class Home extends React.Component {
     this.setState({precoMax: event.target.value})
   }
   
-  
   selecionaProduto =(id) => {
    const novaList = this.state.produtos.map((produto)=>{
     if(id === produto.id){
@@ -88,6 +111,8 @@ export default class Home extends React.Component {
   render() {
     return (
       <MainContainer>
+
+        <PageName>SUPERNOVA CAMISETAS</PageName>
 
         <Filtro
           busca={this.state.busca}

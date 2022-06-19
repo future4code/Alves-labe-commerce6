@@ -2,13 +2,19 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 
+const CardContainer = styled.div`
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 1.5px 2.5px darkgray
+`
+
 const Cards = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap ;
   background-color: white;
-  border: 1px solid black;
+  border-radius: 5px 5px 5px 5px;
+  //border: 1px solid black;
   width: 15vw;
   height: 100%;
 
@@ -20,6 +26,8 @@ const Cards = styled.div`
     border: none
   }
 `;
+
+
 
 const Imagem = styled.img`
   width: 100%;
@@ -39,7 +47,7 @@ const Preco = styled.p`
 
 export default function Card(props) {
     return (
-      <div>
+      <CardContainer>
         <Cards>
             <Imagem src={props.elemento.imagem} />
             <Produto>{props.elemento.nome}</Produto>
@@ -47,7 +55,7 @@ export default function Card(props) {
             {/* <button onClick={()=> props.selecionaProduto(produtos.id)}>Adicionar ao Carrinho</button> */}
             <button>Adicionar ao Carrinho</button>
         </Cards>
-      </div>
+      </CardContainer>
     );
   }
 
