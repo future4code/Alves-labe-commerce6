@@ -18,8 +18,8 @@ https://real-hill.surge.sh
 
 ## O que funciona
 
-- A lógica de filtros por valor mínimo e máximo
-- A lógica de ordenação por preço crescente de decrescente
+- A lógica de filtros por valor mínimo e máximo.
+- A lógica de ordenação por preço crescente de decrescente.
 
 ## O que não funciona
 
