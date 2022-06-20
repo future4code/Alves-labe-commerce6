@@ -7,6 +7,7 @@ import Ordem from "./Ordem";
 import styled from "styled-components";
 import "../App.css";
 import backgroundimage from "../imgProdutos/purplegalaxy.jpg"
+import storelogo from "../imgProdutos/alienicon.png"
 
 const MainContainer = styled.div`
   display: grid;
@@ -30,6 +31,7 @@ const PageName = styled.div`
   font-size: 8vh;
   font-family: 'Amatic SC', cursive;
   color: white;
+  word-spacing: 1vw;
   align-items: center;
   margin-right: 5vw;
   margin-left: 5vw;
@@ -42,14 +44,42 @@ const PageName = styled.div`
   background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(168,143,215,0.48783263305322133) 100%);
   opacity: 0.6;
 
-}
+  @media screen and (min-device-width : 320px) and (max-device-width : 480px){
+    display: block;
+    font-size: 20vh;
+    padding-top:10vh;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    witdh: 100
+  }
 `
+const Logo = styled.img`
+  display: inline-block;
+  margin-left: 0.5vw;
+  height: 8vh;
+
+  @media screen and (min-device-width : 320px) and (max-device-width : 480px){
+    height: 30%;
+    margin: 0;
+    text-align: center;
+  }
+`
+
 
 const CenterContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   height: 95vh;
-  margin-bottom: 10vh
+  margin-bottom: 10vh;
+
+  @media screen and (min-device-width : 320px) and (max-device-width : 480px){
+    display: block;
+    width 100%;
+    margin: 0;
+    text-align: center;
+  }
+
 `
 
 const ProductsContainer = styled.div`
@@ -61,11 +91,10 @@ const ProductsContainer = styled.div`
   align-items: center;
   background-color: #D7D4DC;
   justify-content: space-evenly;
-  overflow: auto
 
   @media screen and (min-device-width : 320px) and (max-device-width : 480px){
     display: block;
-    width: 100%
+    width: 100%;
   }
 
 `
@@ -112,8 +141,8 @@ export default class Home extends React.Component {
     return (
       <MainContainer>
 
-        <PageName>SUPERNOVA CAMISETAS</PageName>
-
+        <PageName>ALIEN  STORE <Logo src={storelogo}></Logo></PageName>
+        
         <Filtro
           busca={this.state.busca}
           atualizarBusca={this.atualizarBusca}

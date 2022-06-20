@@ -16,6 +16,7 @@
       display: block;
       text-align: center;
       padding: 0;
+      height: 12vh;
       width: 100%
     }
   `;

@@ -14,9 +14,9 @@ const Filtros = styled.section`
   @media screen and (min-device-width : 320px) and (max-device-width : 480px){
     display: block;
     padding-top: 10vh;
+    height: 50vh;
     width: 100%;
     margin: 0;
-    max-height: 100%;
   }
   `;
 
