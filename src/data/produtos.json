@@ -1,0 +1,39 @@
+[
+    {
+        "id": "1",
+        "nome": "Camiseta I SURVIVED",
+        "imagem": "https://i.imgur.com/j4kvI6b.jpg/",
+        "preco": 85
+    },
+    {
+        "id": "2",
+        "nome": "Camiseta ME LEVA",
+        "imagem": "https://i.imgur.com/iiOquxf.jpg/",
+        "preco":90
+    },
+    {
+        "id": "3",
+        "nome": "Camiseta MEDITANDO",
+        "imagem": "https://i.imgur.com/30G1kRq.jpg/",
+        "preco": 100
+    },
+    {
+        "id": "4",
+        "nome": "Camiseta INFINITY",
+        "imagem": "https://i.imgur.com/802pYzw.jpg",
+        "preco": 50
+    },
+    {
+        "id": "5",
+        "nome": "Camiseta BILU",
+        "imagem": "https://i.imgur.com/PctTBlr.jpeg",
+        "preco": 500
+    },
+    {
+        "id": "6",
+        "nome": "Camiseta VAMO ET?",
+        "imagem": "https://i.imgur.com/zK5B7oa.jpeg",
+        "preco": 80
+    }
+
+]
